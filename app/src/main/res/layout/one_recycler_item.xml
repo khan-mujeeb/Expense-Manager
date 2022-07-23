@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:layout_height="120dp">
+   <View
+       android:id="@+id/crossBtn"
+       android:layout_width="25sp"
+       android:layout_height="25dp"
+       android:layout_gravity="end"
+       android:background="@drawable/ic_baseline_delete_forever_24"
+       android:layout_margin="5dp">
+   </View>
+
+    <LinearLayout
+        android:id="@+id/priority"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/note_one"
+            android:textSize="20sp"
+            android:text="this is note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/amount_one"
+            android:textSize="20sp"
+            android:text="250"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:id="@+id/date_one"
+            android:text="21 july 2022"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+

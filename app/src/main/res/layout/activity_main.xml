@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="@color/red"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="170sp"
+        android:textAlignment="center"
+
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/expense_tracker"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="Login"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/email"
+        android:background="@drawable/edit_text_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:hint="@string/enter_email"
+        android:inputType="textEmailAddress"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/enter_password"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:text="@string/forgot"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/login"
+        android:backgroundTint="@color/white"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/goToSignup"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:text="@string/dont_t_have_an_account_create"
+
+        android:layout_height="wrap_content" />
+</LinearLayout>

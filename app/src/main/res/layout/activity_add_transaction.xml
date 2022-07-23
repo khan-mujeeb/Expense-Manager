@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddTransaction">
+    <RelativeLayout
+        android:id="@+id/dashboard_Actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/red">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Dashboard"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/add_amt"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:background="@drawable/edit_text_bg"
+            android:layout_marginTop="15dp"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Amount">
+        </EditText>
+        <EditText
+            android:id="@+id/add_note"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:background="@drawable/edit_text_bg"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:hint="Note"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:layout_height="150dp">
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/expense_btn"
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Expense"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/income_btn"
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Income"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+        </CheckBox>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:text="ADD"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/red"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+    </Button>
+
+</LinearLayout>
